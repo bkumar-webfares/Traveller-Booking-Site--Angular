@@ -1,0 +1,41 @@
+ <!--Mid Form Start-->
+ <div class="login-box">
+  <div class="uk-background-default uk-padding-small border-radius">
+      <div class="uk-text-center uk-heading uk-margin-small-bottom"><img src="images/logo.png"></div>
+      <h1 class="uk-text-center">Welcome To Greaves Travel</h1>
+      <form class="uk-padding-small uk-padding-remove-bottom" (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+          <fieldset class="uk-fieldset">
+              <div *ngIf = "!loginForm.controls.accountID.valid && loginForm.controls.accountID.dirty" >Enter Account here</div>      
+              <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="Account Number" id="accountNumber" formControlName="accountID" required>
+              </div>
+              <div *ngIf = "!loginForm.controls.email.valid && loginForm.controls.email.dirty">Enter Email here</div>
+              <div class="uk-margin">
+                  <input class="uk-input" type="text" placeholder="User Name" id="email" formControlName="email" required>
+                  <!--<input class="uk-input uk-form-danger" type="text" placeholder="User Name">-->
+              </div>
+              <div class="uk-margin">
+              <div *ngIf = "!loginForm.controls.password.valid && loginForm.controls.password.dirty">Enter Email here</div>
+                  <input class="uk-input" type="password" placeholder="Password" id="password" formControlName="password" name="Password" required >
+              </div>
+              <button class="uk-button uk-button-secondary uk-width-1-1" type="submit" ><i class="fa fa-sign-in" aria-hidden="true"></i>  Login</button>
+              <div class="uk-margin uk-text-center uk-margin-remove-bottom"><a href="#">forgot password?</a></div>
+          </fieldset>
+      </form>
+  </div>
+  <div class="uk-background-default uk-padding-small border-radius uk-margin-small-top">
+      <div class="uk-text-center uk-heading">© 2016 - 2017 Greaves. wFares.com LLC All Rights Reserved</div>
+      <div class="uk-text-center uk-margin-small-top"><img src="images/godaddy-verified.png"></div>
+  </div>
+</div>
+<!--Image Slider Start-->
+<div id="slides">
+  <div class="slides-container">
+      <div><img src="images/login-bg01.png" alt="Slide-01"></div>
+      <div><img src="images/login-bg02.png" alt="Slide-02"></div>
+      <div><img src="images/login-bg03.png" alt="Slide-03"></div>
+      <div><img src="images/login-bg04.png" alt="Slide-04"></div>
+      <div><img src="images/login-bg05.png" alt="Slide-05"></div>
+      <div><img src="images/login-bg06.png" alt="Slide-06"></div>
+  </div>
+</div>

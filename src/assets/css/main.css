@@ -1,0 +1,57 @@
+.login-box{max-width:350px;position: absolute;z-index: 9;width: 100%;top: 50%;margin-top: -250px;left: 10%}
+.login-box .uk-heading,.flightSearchBox .uk-heading{border-bottom: 1px solid #daa024;padding-bottom: 15px;}.login-box form a{color:#333;text-decoration: underline}
+.login-box h1,.flightSearchBox h1{font-size: 20px;margin: 0;text-transform: uppercase;}
+.border-radius{border-radius: 5px;-webkit-border-radius: 5px;}
+header,.uk-footer{z-index: 9;padding: 10px 0;}
+.uk-deader .uk-navbar-nav li:last-child{border-left:1px solid #d39b24;}
+.search-box{max-width: 564px;}.search-box .uk-inline,.flightSearchBox .uk-inline{display: block;}.uk-form-horizontal{width: 100%;}
+.search-box .uk-hr,.flightSearchBox .uk-hr{border-top:1px solid #daa024;}
+.uk-padding-top {padding-top: 15px !important;}.search-box label,.search-box .uk-input,.search-box .uk-select,.search-box .uk-textarea{font-weight: 500;color: #303030;}
+#slides .uk-overlay{top:20%;text-align: right;right: 10%;}
+#slides .uk-overlay h2{text-transform: uppercase; font-weight: 300; font-size: 4rem;}
+#slides .uk-overlay h2 span{display: block;font-weight: 900;}
+.uk-offcanvas-bar li a{font-weight: 300;text-transform: uppercase;display: block;font-size: 15px;text-decoration: none;line-height: 35px;padding: 0 20px;}
+.uk-offcanvas-bar .uk-profile{text-align: center;font-size: 20px;text-transform: uppercase;padding: 20px 0;}.uk-offcanvas-bar .uk-profile a{color: #ffb319;font-weight: 500;}
+.uk-profile .uk-border-circle {border: 5px solid #333; width: 120px;}
+.uk-midpage{margin: 1em 0;}.uk-search-filter,.uk-rating2{position: relative;}
+.uk-border{border:1px solid #d0d0d0;}.uk-border-radius{border-radius: 4px;-webkit-border-radius:4px;}
+.uk-rating i{font-size: 17px;color:#ff6c00;margin-right: 10px;}
+.uk-hotelimage a{color: #3486c8!important;padding:5px 10px;border-radius: 3px 0 0 3px;}
+.uk-list-bullet-arrow,.uk-list-bullet-arrow li{margin: 2px 0!important;}.uk-listing-price p{margin: 0!important;}
+.uk-listing-view p,.uk-hotel-detail p{margin: 5px 0;}.uk-border-left{border-left: 1px solid #ccc;}
+.uk-listing-price .uk-text-large{font-size: 1.8rem;font-weight: bold}.uk-search-filter .uk-first-column{padding-top: 5px;}
+#toggle-animation form{width: 100%;}
+.uk-rating2 .uk-card-badge {top: 0; right: 0;}
+.uk-booking-detail legend{font-size: 14px}.uk-booking-detail p{line-height: 25px;}
+/* Flight Css */
+.flightSearchBox{max-width: 1100px;position: absolute;z-index: 9;width: 100%;top: 50%;left: 50%;margin-top: -225px;margin-left: -550px;}
+.flightSearchBox .uk-form-icon{height: 40px;}.uk-button .uk-icon{margin-right: 4px;}
+.flightSearchBox .uk-subnav-pill a{border: 1px solid #ccc;padding: 11px 24px;}.flightSearchBox .uk-subnav div{padding-left: 0;}
+.flightSearchBox .uk-subnav-pill :first-child{padding-left: 20px;}
+.flightSearchBox .uk-subnav-pill > .uk-active > a{border-color:#daa024}
+.flightSearchBox .uk-button{padding: 0 5px;}
+.flightSearchBox .uk-button.round { padding: 0 17px; border-radius: 3px;}
+.passrCounts{border:none;width:20px;text-align: center;}.wrapper-dropdown-3 .dropdown svg{width:15px;}
+.weatherbox ul{list-style: none;padding: 0;margin-bottom: 0;display: table;width: 100%;}
+.weatherbox li{display: table-cell;border-right: 1px solid #ccc;text-align: center;}
+.weather-icon{width:35px;height:35px;display: block;margin: 0 auto!important;background: url(../images/weather.png) no-repeat;}
+.weatherbox .sunrise{background-position: 0px 0px;}
+.weatherbox .sunnoon{background-position: -40px 0px;}
+.weatherbox .sunset{background-position: -2px -32px;}
+.weatherbox .sunnight{background-position: -40px -32px;}
+.weatherbox span{display: block;font-size: 24px;color:#d89a25;}
+.padding-top{padding-top: 15px;}.priceDetail{padding-top: 70px}
+.flightList img{width: auto!important; flex: inherit!important; margin: auto;}
+.flightTimeTable span,.flightTimeTable strong{position: relative;z-index:1;background: #fff; padding: 1px 5px;}
+.totalTime,.startTime,.endTime{display: inline-block;flex: auto!important;width: auto!important;text-align: center;position: relative;}
+.startTime::after,.totalTime::after{position: absolute;content: "";top:26px;right: 0;border-top: 1px solid #ccc;width: 21%;z-index: 0}
+.totalTime::before,.endTime::before{position: absolute;content: "";top:26px;left: 0;border-top: 1px solid #ccc;width: 21%;z-index: 0}
+.startTime,.endTime{padding-top: 18px;}
+.padding-bottom{padding-bottom: 15px;}
+.flightTimedetail{position: relative;margin-top: 28px;font-size: 14px;}.flightTimedetail::after{position: absolute;content: "";bottom:10px;right: 0;border-top: 1px dashed #ccc;width: 38%;z-index: 0}
+.flightTimedetail::before{position: absolute;content: "";bottom:10px;left: 0;border-top: 1px dashed #ccc;width: 45%;z-index: 0}
+.flightTimedetail span{position: relative;padding: 0 10px; background: #f8f8f8; z-index: 1;}
+.flightTimedetail span::before{position: absolute;content: "";top:4px;left: 0;z-index: 0;border-left:5px dashed #ccc;border-top:4px solid transparent;border-bottom:4px solid transparent}
+.flightTimedetail span::after{position: absolute;content: "";top:4px;right:-100%;z-index: 0;border-left:5px dashed #ccc;border-top:4px solid transparent;border-bottom:4px solid transparent}
+.flightTimedetail .stopCount{font-size: 12px;font-style: normal}
+

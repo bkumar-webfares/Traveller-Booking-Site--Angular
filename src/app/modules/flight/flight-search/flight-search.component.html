@@ -1,0 +1,426 @@
+
+<div class="uk-offcanvas-content">
+  <!--Header Start-->
+  <app-search-header></app-search-header>
+  
+  <!--Mid Form Start-->
+  <div class="uk-container uk-container-large">
+    <div class="flightSearchBox">
+        <div class="uk-background-default uk-padding-small border-radius">
+            <div class="uk-heading uk-margin-bottom">
+                <h1>Search Flight</h1>
+            </div>
+            <ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+                <div><a href="#">One Way Only</a></div>
+                <div><a href="#">Round Trip</a></div>
+                <div><a href="#">Multi City</a></div>
+            </ul>
+            <ul class="uk-switcher uk-margin">
+                <form>
+                <div class="uk-grid-match uk-grid-small" uk-grid>                    
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                            <div class="uk-autocomplete uk-form ui-widget">
+                                <input class="uk-input citynamesuggetion" type="text" placeholder="From City / Airport">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                            <div class="uk-autocomplete uk-form ui-widget">
+                                <input class="uk-input citynamesuggetion" type="text" placeholder="To City / Airport">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input fromdate" type="text" placeholder="From Date" id="fromdate">
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Select Class</option>
+                                <option>Economy</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Adults(18+)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Children(2-17)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label  for="form-stacked-text"></label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Infants(Under 2)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>                       
+                    </div>
+                    <div class="uk-form-horizontal">
+                        <hr class="uk-hr">
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Exclude Airport - 2 Letter Codes" id="excludeAirport">
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Preferred Airlines - 2 Letter Codes" id="prefferedAirline">
+                        </div>
+                        
+                        <div class="uk-width-1-5@s">
+                            <select class="uk-select" id="publisedFare">
+                                <option>Published Fares</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_1_start" id="range_example_1_start" value="Departure Time" /> 
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_1_end" id="range_example_1_end" value="Return Time" /> 
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small" uk-grid>
+                        <div class="uk-width-2-5@m uk-width-0-5@s "></div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Non-Stop Flights Only</label>
+                        </div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Show Alternative Airports</label>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <button class="uk-button uk-button-secondary uk-width-1-1"><span uk-icon="icon: search"></span>  Search</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                </form>
+                <form>
+                <div class="uk-grid-match uk-grid-small" uk-grid>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                            <div class="uk-autocomplete uk-form ui-widget">
+                                <input class="uk-input citynamesuggetion" type="text" placeholder="From City / Airport">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                            <div class="uk-autocomplete uk-form ui-widget">
+                                <input class="uk-input citynamesuggetion" type="text" placeholder="To City / Airport">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input fromdate" type="text" placeholder="Departure Date" id="departureDate">
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input todate" type="text" placeholder="Return Date" id="returnDate">
+                        </div>
+                    </div>
+
+                    <div class="uk-width-expand@m">
+                        <div class="uk-inline">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Select Class</option>
+                                <option>Economy</option>
+                                <option>Business</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Adults(18+)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Children(2-17)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label  for="form-stacked-text"></label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Infants(Under 2)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>                       
+                    </div>
+                    <div class="uk-form-horizontal">
+                        <hr class="uk-hr">
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Exclude Airport - 2 Letter Codes" id="excludeAirport">
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Preferred Airlines - 2 Letter Codes" id="prefferedAirline">
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <select class="uk-select" id="publisedFare">
+                                <option>Published Fares</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_2_start" id="range_example_2_start" value="Departure Time" /> 
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_2_end" id="range_example_2_end" value="Return Time" /> 
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small" uk-grid>
+                        <div class="uk-width-2-5@m uk-width-0-5@s "></div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Non-Stop Flights Only</label>
+                        </div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Show Alternative Airports</label>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <button class="uk-button uk-button-secondary uk-width-1-1"><span uk-icon="icon: search"></span>  Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                </form>
+                <form>
+                <div class="uk-grid-match uk-grid-small" uk-grid>
+                    <div class="uk-form-horizontal uk-grid-small">
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text" placeholder="From City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text" placeholder="To City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                                <input class="uk-input fromdate" type="text" placeholder="Departure Date" id="departureDate">
+                            </div>
+                        </div>
+                        
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <select class="uk-select" id="form-horizontal-select">
+                                    <option>Select Class</option>
+                                    <option>Economy</option>
+                                    <option>Business</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Adults(18+)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                        <div class="uk-width-1-4@s">
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Children(2-17)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label  for="form-stacked-text"></label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>Infants(Under 2)</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>                       
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small">
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text" placeholder="From City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text" placeholder="To City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                                <input class="uk-input fromdate" type="text" placeholder="Departure Date" id="departureDate">
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+
+                        </div>
+
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small">
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text    " placeholder="From City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                                <div class="uk-autocomplete uk-form ui-widget">
+                                    <input class="uk-input citynamesuggetion" type="text" placeholder="To City / Airport">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <div class="uk-inline">
+                                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                                <input class="uk-input fromdate" type="text" placeholder="Departure Date" id="departureDate">
+                            </div>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <button class="uk-button uk-button-primary round"><span uk-icon="icon: plus-circle"></span>  Add City</button>
+                        </div>
+
+                    </div>
+
+                    <div class="uk-form-horizontal">
+                        <hr class="uk-hr">
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Exclude Airport - 2 Letter Codes" id="excludeAirport">
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input class="uk-input" type="text" placeholder="Preferred Airlines - 2 Letter Codes" id="prefferedAirline">
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <select class="uk-select" id="publisedFare">
+                                <option>Published Fares</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_3_start" id="range_example_3_start" value="Departure Time" />                                   
+                            
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <input type="text" class="uk-input" name="range_example_3_end" id="range_example_3_end" value="Return Time" />
+                        </div>                                
+                        
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-small" uk-grid>
+                        <div class="uk-width-2-5@m uk-width-0-5@s "></div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Non-Stop Flights Only</label>
+                        </div>
+                        <div class="uk-width-1-5@m uk-width-2-5@s">
+                            <label class="uk-padding-small-top"><input class="uk-radio" type="radio" name="radio2" checked> Show Alternative Airports</label>
+                        </div>
+                        <div class="uk-width-1-5@s">
+                            <button class="uk-button uk-button-secondary uk-width-1-1"><span uk-icon="icon: search"></span>  Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                </form>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!--Image Slider Start-->
+<div id="slides">
+    <div class="slides-container">
+        <div><img src="images/flight01.jpg" alt="Slide-01"></div>
+        <div><img src="images/flight02.jpg" alt="Slide-02"></div>
+        <div><img src="images/flight03.jpg" alt="Slide-03"></div>
+    </div>
+</div>
+
+<!--Mobile Navigation Start-->
+<app-mobile-navigation></app-mobile-navigation>
+
+<!--Footer Start-->
+<app-search-footer></app-search-footer>

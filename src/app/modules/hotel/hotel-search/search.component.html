@@ -1,0 +1,151 @@
+
+<div class="uk-offcanvas-content">
+  <!--Header Start-->
+  <app-search-header></app-search-header>
+  
+    <!--Mid Form Start-->
+    <div class="uk-container uk-container-large">  
+        <div class="login-box search-box">
+            <div class="uk-background-default uk-padding-small border-radius">
+                <div class="uk-heading uk-margin-bottom"><h1>Search Hotels</h1></div>
+                <form class="uk-grid-small" uk-grid>
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: location"></span>
+                            <div class="uk-autocomplete uk-form ui-widget">
+                                <input class="uk-input" type="text" placeholder="Enter City" id="citynamesuggetion">
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: home"></span>
+                            <input class="uk-input" type="text" placeholder="Hotel Name (Optional)"  id="hotelnamesuggetion">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input" type="text" placeholder="From Date" id="fromdate">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@s">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: calendar"></span>
+                            <input class="uk-input" type="text" placeholder="To Date" id="todate">
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal">
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-horizontal-select">Search Non-Amenity Properties (Longer Response)</label>
+                            <div class="uk-form-controls">
+                                <select class="uk-select" id="form-horizontal-select">
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-form-horizontal"><hr class="uk-hr"></div>
+                    <div class="uk-form-horizontal uk-grid-small " uk-grid>                                
+                        <div class="uk-width-1-4@s">
+                            <label for="form-stacked-text">Room(s)</label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                        <div class="uk-width-1-4@s">
+                            <label for="form-stacked-text">Adults(18+)</label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div> 
+                        <div class="uk-width-1-4@s">
+                            <label for="form-stacked-text">Children(2-17)</label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>
+                        <div class="uk-width-1-4@s">
+                            <label  for="form-stacked-text">Infants(Under 2)</label>
+                            <select class="uk-select" id="form-horizontal-select">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                        </div>                       
+                    </div>
+                    <div class="uk-form-horizontal uk-grid-margin uk-first-column">
+                        <div class="uk-margin">                                
+                            <label class="uk-form-label"> <input class="uk-checkbox" type="checkbox" checked>  Show USD for International Hotels on availability page</label>
+                            <div class="uk-form-controls">
+                                <button class="uk-button uk-button-secondary uk-width-1-1"><span uk-icon="icon: Search"></span>  Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+              
+        </div>
+    </div>
+    <!--Image Slider Start-->
+    <div id="slides">
+        <div class="slides-container">
+          <div><img src="images/hotel-bg01.jpg" alt="Slide-01">
+              <div class="uk-overlay uk-light uk-position-bottom">
+                  <h2>The Leela Palace <span>Udaipur</span></h2>
+              </div>
+          </div>
+          <div><img src="images/hotel-bg02.jpg" alt="Slide-02">
+              <div class="uk-overlay uk-light uk-position-bottom">
+                  <h2>Chicago, Illinois <span>USA</span></h2>
+              </div>
+          </div>
+          <div><img src="images/hotel-bg03.jpg" alt="Slide-03">
+              <div class="uk-overlay uk-light uk-position-bottom">
+                  <h2>Godfrey Hotel <span>Chicago</span></h2>
+              </div>
+          </div>
+          <div><img src="images/hotel-bg04.jpg" alt="Slide-03">
+              <div class="uk-overlay uk-light uk-position-bottom">
+                  <h2>Sheraton Grand <span>Chicago</span></h2>
+              </div>
+          </div>
+        </div>      
+      </div>
+
+  </div>
+
+  <!--Mobile Navigation Start-->
+  <app-mobile-navigation></app-mobile-navigation>
+
+  <!--Footer Start-->
+  <app-search-footer></app-search-footer>
